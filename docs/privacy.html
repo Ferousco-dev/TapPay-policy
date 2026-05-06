@@ -1,141 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>TapPay — Privacy Policy</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 760px;
-    margin: 40px auto;
-    padding: 0 20px 80px;
-    line-height: 1.6;
-    color: #111;
-    background: #fff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e5e5e5; background: #0c0e13; }
-    a { color: #00cf7b; }
-    h1, h2 { color: #fff; }
-    code { background: #1a1d29; }
-  }
-  h1 { font-size: 28px; margin-bottom: 4px; }
-  h2 { font-size: 18px; margin-top: 36px; }
-  p, li { font-size: 15px; }
-  .updated { color: #777; font-size: 13px; margin-top: 0; }
-  code { background: #f3f3f5; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TapPay — Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        max-width: 760px;
+        margin: 40px auto;
+        padding: 0 20px 80px;
+        line-height: 1.6;
+        color: #111;
+        background: #fff;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 4px;
+      }
+      h2 {
+        font-size: 18px;
+        margin-top: 36px;
+      }
+      p,
+      li {
+        font-size: 15px;
+      }
+      .updated {
+        color: #777;
+        font-size: 13px;
+        margin-top: 0;
+      }
+      /* Accent-tinted chips — work in both light and dark via the accent green. */
+      code {
+        background: rgba(0, 207, 123, 0.12);
+        color: #00a86b;
+        padding: 2px 7px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-family: ui-monospace, "SF Mono", Menlo, monospace;
+        border: 1px solid rgba(0, 207, 123, 0.18);
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #e5e5e5;
+          background: #0c0e13;
+        }
+        a {
+          color: #00cf7b;
+        }
+        h1,
+        h2 {
+          color: #fff;
+        }
+        code {
+          background: rgba(0, 207, 123, 0.1);
+          color: #00cf7b;
+          border-color: rgba(0, 207, 123, 0.22);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TapPay Privacy Policy</h1>
+    <p class="updated">Last updated: 6 May 2026</p>
 
-<h1>TapPay Privacy Policy</h1>
-<p class="updated">Last updated: 6 May 2026</p>
+    <p>
+      This Privacy Policy explains how the TapPay mobile application ("TapPay",
+      "we", "our") collects, uses, and protects your information. By using
+      TapPay you agree to the practices described below.
+    </p>
 
-<p>
-  This Privacy Policy explains how the TapPay mobile application
-  ("TapPay", "we", "our") collects, uses, and protects your information.
-  By using TapPay you agree to the practices described below.
-</p>
+    <h2>1. Information we collect</h2>
+    <p>
+      To provide payments, identity, and notification features, TapPay collects:
+    </p>
+    <ul>
+      <li>
+        <strong>Account information</strong> — your name, email address, phone
+        number, and a securely-hashed password supplied during sign-up.
+      </li>
+      <li>
+        <strong>Wallet &amp; transaction data</strong> — your wallet balance,
+        transaction history, transfer amounts, descriptions, and recipient
+        identifiers (UUID or phone number) for transfers you initiate or
+        receive.
+      </li>
+      <li>
+        <strong>Device information</strong> — a device identifier (Android ID or
+        iOS <code>identifierForVendor</code>), platform (Android/iOS), OS
+        version, and app build, used to bind your account to a device for
+        security.
+      </li>
+      <li>
+        <strong>Push notification token</strong> — a Firebase Cloud Messaging
+        registration token that identifies your install for delivery of
+        notifications such as "Payment Received".
+      </li>
+      <li>
+        <strong>Authentication data</strong> — a locally-stored, salted-hash of
+        any in-app passcode you set. Biometric data (Face ID, Touch ID,
+        fingerprint) is processed entirely on-device by the platform; TapPay
+        never receives or stores biometric templates.
+      </li>
+    </ul>
 
-<h2>1. Information we collect</h2>
-<p>To provide payments, identity, and notification features, TapPay collects:</p>
-<ul>
-  <li><strong>Account information</strong> — your name, email address, phone number, and a securely-hashed password supplied during sign-up.</li>
-  <li><strong>Wallet &amp; transaction data</strong> — your wallet balance, transaction history, transfer amounts, descriptions, and recipient identifiers (UUID or phone number) for transfers you initiate or receive.</li>
-  <li><strong>Device information</strong> — a device identifier (Android ID or iOS <code>identifierForVendor</code>), platform (Android/iOS), OS version, and app build, used to bind your account to a device for security.</li>
-  <li><strong>Push notification token</strong> — a Firebase Cloud Messaging registration token that identifies your install for delivery of notifications such as "Payment Received".</li>
-  <li><strong>Authentication data</strong> — a locally-stored, salted-hash of any in-app passcode you set. Biometric data (Face ID, Touch ID, fingerprint) is processed entirely on-device by the platform; TapPay never receives or stores biometric templates.</li>
-</ul>
+    <h2>2. Permissions we request and why</h2>
+    <ul>
+      <li>
+        <strong>Camera</strong> (<code>android.permission.CAMERA</code>,
+        <code>NSCameraUsageDescription</code>) — to scan QR codes during
+        payments. Frames are processed in-memory; we do not store photos or
+        video.
+      </li>
+      <li>
+        <strong>NFC</strong> (<code>android.permission.NFC</code>) — to send and
+        receive payment tokens by tapping phones together (Android only).
+      </li>
+      <li>
+        <strong>Contacts</strong>
+        (<code>android.permission.READ_CONTACTS</code>,
+        <code>NSContactsUsageDescription</code>) — read locally to help you pick
+        a recipient by phone number. Contacts are not uploaded to our servers.
+      </li>
+      <li>
+        <strong>Notifications</strong>
+        (<code>android.permission.POST_NOTIFICATIONS</code>) — to display
+        payment and security alerts.
+      </li>
+      <li>
+        <strong>Biometric / Face ID</strong>
+        (<code>android.permission.USE_BIOMETRIC</code>,
+        <code>NSFaceIDUsageDescription</code>) — to authorize sign-in and
+        outgoing payments. Biometric verification happens on-device.
+      </li>
+      <li>
+        <strong>Internet</strong> (<code>android.permission.INTERNET</code>) —
+        to communicate with our payment backend.
+      </li>
+      <li>
+        <strong>Photo library</strong>
+        (<code>NSPhotoLibraryUsageDescription</code>,
+        <code>NSPhotoLibraryAddUsageDescription</code>) — to set a profile
+        picture or save a receipt to your gallery, only when you explicitly
+        choose to.
+      </li>
+    </ul>
 
-<h2>2. Permissions we request and why</h2>
-<ul>
-  <li><strong>Camera</strong> (<code>android.permission.CAMERA</code>, <code>NSCameraUsageDescription</code>) — to scan QR codes during payments. Frames are processed in-memory; we do not store photos or video.</li>
-  <li><strong>NFC</strong> (<code>android.permission.NFC</code>) — to send and receive payment tokens by tapping phones together (Android only).</li>
-  <li><strong>Contacts</strong> (<code>android.permission.READ_CONTACTS</code>, <code>NSContactsUsageDescription</code>) — read locally to help you pick a recipient by phone number. Contacts are not uploaded to our servers.</li>
-  <li><strong>Notifications</strong> (<code>android.permission.POST_NOTIFICATIONS</code>) — to display payment and security alerts.</li>
-  <li><strong>Biometric / Face ID</strong> (<code>android.permission.USE_BIOMETRIC</code>, <code>NSFaceIDUsageDescription</code>) — to authorize sign-in and outgoing payments. Biometric verification happens on-device.</li>
-  <li><strong>Internet</strong> (<code>android.permission.INTERNET</code>) — to communicate with our payment backend.</li>
-  <li><strong>Photo library</strong> (<code>NSPhotoLibraryUsageDescription</code>, <code>NSPhotoLibraryAddUsageDescription</code>) — to set a profile picture or save a receipt to your gallery, only when you explicitly choose to.</li>
-</ul>
+    <h2>3. How we use your information</h2>
+    <ul>
+      <li>To create and authenticate your TapPay account.</li>
+      <li>
+        To process peer-to-peer payments, top-ups, and withdrawals you initiate.
+      </li>
+      <li>
+        To deliver real-time notifications about money received, payments sent,
+        or security events.
+      </li>
+      <li>To detect and prevent fraud, abuse, and unauthorized access.</li>
+      <li>
+        To comply with applicable financial, tax, and AML/KYC regulations.
+      </li>
+    </ul>
 
-<h2>3. How we use your information</h2>
-<ul>
-  <li>To create and authenticate your TapPay account.</li>
-  <li>To process peer-to-peer payments, top-ups, and withdrawals you initiate.</li>
-  <li>To deliver real-time notifications about money received, payments sent, or security events.</li>
-  <li>To detect and prevent fraud, abuse, and unauthorized access.</li>
-  <li>To comply with applicable financial, tax, and AML/KYC regulations.</li>
-</ul>
+    <h2>4. Third parties we share data with</h2>
+    <p>We share only what's necessary for the service to function:</p>
+    <ul>
+      <li>
+        <strong>Firebase (Google)</strong> — Cloud Messaging (push tokens and
+        message routing). Subject to Google's
+        <a href="https://firebase.google.com/support/privacy" rel="noopener"
+          >Firebase Privacy Policy</a
+        >.
+      </li>
+      <li>
+        <strong>Our payment backend</strong> — hosted at
+        <code>nfcsender.up.railway.app</code>, which receives the account and
+        transaction data described in §1 in order to settle transfers and
+        maintain wallet balances.
+      </li>
+      <li>
+        <strong>Payment processors</strong> — when you top up or cash out, we
+        share the transaction amount and account details required by the
+        processor to complete the funding/payout.
+      </li>
+    </ul>
+    <p>
+      We do <strong>not</strong> sell, rent, or trade your personal data to
+      advertisers.
+    </p>
 
-<h2>4. Third parties we share data with</h2>
-<p>
-  We share only what's necessary for the service to function:
-</p>
-<ul>
-  <li><strong>Firebase (Google)</strong> — Cloud Messaging (push tokens and message routing). Subject to Google's <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy Policy</a>.</li>
-  <li><strong>Our payment backend</strong> — hosted at <code>nfcsender.up.railway.app</code>, which receives the account and transaction data described in §1 in order to settle transfers and maintain wallet balances.</li>
-  <li><strong>Payment processors</strong> — when you top up or cash out, we share the transaction amount and account details required by the processor to complete the funding/payout.</li>
-</ul>
-<p>We do <strong>not</strong> sell, rent, or trade your personal data to advertisers.</p>
+    <h2>5. Data retention</h2>
+    <p>
+      Account, wallet, and transaction records are retained for as long as your
+      account is active and for any additional period required by law (typically
+      up to 7 years for financial records). Push tokens are deleted when you
+      sign out or uninstall the app. You may request deletion of your account
+      and associated data at any time using the contact details below.
+    </p>
 
-<h2>5. Data retention</h2>
-<p>
-  Account, wallet, and transaction records are retained for as long as your
-  account is active and for any additional period required by law (typically
-  up to 7 years for financial records). Push tokens are deleted when you sign
-  out or uninstall the app. You may request deletion of your account and
-  associated data at any time using the contact details below.
-</p>
+    <h2>6. Security</h2>
+    <p>
+      All network traffic between the app and our backend uses HTTPS. Passcodes
+      are stored only as salted SHA-256 hashes on the device. Access tokens are
+      stored in the platform's secure preferences and are short-lived; refresh
+      tokens are rotated on use. Biometric authentication is performed by the
+      operating system; we never receive your biometric data.
+    </p>
 
-<h2>6. Security</h2>
-<p>
-  All network traffic between the app and our backend uses HTTPS. Passcodes
-  are stored only as salted SHA-256 hashes on the device. Access tokens are
-  stored in the platform's secure preferences and are short-lived; refresh
-  tokens are rotated on use. Biometric authentication is performed by the
-  operating system; we never receive your biometric data.
-</p>
+    <h2>7. Children's privacy</h2>
+    <p>
+      TapPay is not directed at children under 13 (or the equivalent minimum age
+      in your jurisdiction). We do not knowingly collect data from children. If
+      you believe a child has provided us with personal information, please
+      contact us so we can delete it.
+    </p>
 
-<h2>7. Children's privacy</h2>
-<p>
-  TapPay is not directed at children under 13 (or the equivalent minimum age
-  in your jurisdiction). We do not knowingly collect data from children. If
-  you believe a child has provided us with personal information, please
-  contact us so we can delete it.
-</p>
+    <h2>8. Your rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you.</li>
+      <li>Request correction of inaccurate data.</li>
+      <li>
+        Request deletion of your account and data, subject to legal retention.
+      </li>
+      <li>Withdraw consent for non-essential data processing.</li>
+      <li>Lodge a complaint with your local data protection authority.</li>
+    </ul>
 
-<h2>8. Your rights</h2>
-<p>You have the right to:</p>
-<ul>
-  <li>Access the personal data we hold about you.</li>
-  <li>Request correction of inaccurate data.</li>
-  <li>Request deletion of your account and data, subject to legal retention.</li>
-  <li>Withdraw consent for non-essential data processing.</li>
-  <li>Lodge a complaint with your local data protection authority.</li>
-</ul>
+    <h2>9. International transfers</h2>
+    <p>
+      Our backend and Firebase services may process data in regions outside your
+      country of residence. Where such transfers occur, we rely on adequacy
+      decisions or standard contractual clauses to protect your data.
+    </p>
 
-<h2>9. International transfers</h2>
-<p>
-  Our backend and Firebase services may process data in regions outside your
-  country of residence. Where such transfers occur, we rely on adequacy
-  decisions or standard contractual clauses to protect your data.
-</p>
-
-<h2>10. Changes to this policy</h2>
-<p>
-  We may update this policy as the app evolves. The "Last updated" date at
-  the top of this page reflects the most recent revision. Material changes
-  will be communicated via in-app notice or email where reasonable.
-</p>
-
-<h2>11. Contact</h2>
-<p>
-  Questions, requests, or complaints about this policy or your data:
-  <br />
-  <strong>Email:</strong> <a href="mailto:skoolclaudeuse@gmail.com">skoolclaudeuse@gmail.com</a>
-</p>
-
-</body>
+    <h2>10. Changes to this policy</h2>
+    <p>
+      We may update this policy as the app evolves. The "Last updated" date at
+      the top of this page reflects the most recent revision. Material changes
+      will be communicated via in-app notice or email where reasonable.
+    </p>
+  </body>
 </html>
